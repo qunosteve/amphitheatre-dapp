@@ -7,8 +7,11 @@
   import PrevIcon from "$lib/assets/svg/previous-button.svelte";
   import NextIcon from "$lib/assets/svg/next-button.svelte";
   import OpenFolder from "$lib/assets/svg/open-folder.svelte";
+  import ResetIcon from "$lib/assets/svg/anticlockwise-rotation.svelte";
+  import WalletFilled from "$lib/assets/svg/wallet_filled.svelte";
   import Save from "$lib/assets/svg/save.svelte";
   import Center from "$lib/assets/svg/horizontal-flip.svelte";
+  import Horsechess from "$lib/assets/svg/chess-knight.svelte";
 
   //set costs and variablses
   let currentTile: number = 0;
@@ -46,12 +49,15 @@
 <!-- Armoury Toolbar -->
 <div class="flex flex-row pt-3 pb-3">
   <div style="display: flex; justify-content: center; align-items: center;" class="basis-1/12 ">
-    <button type="button" class="btn-icon bg-gradient-to-br variant-soft-secondary" on:click={openGoogle}><OpenFolder iconSize={25}/></button>
+    <button type="button" class="btn-icon bg-gradient-to-br variant-soft-secondary" style="margin-right: 5px;" on:click={openGoogle}><OpenFolder iconSize={25}/></button>
+    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-secondary" ><ResetIcon iconSize={20}/></button>
   </div>
   <div style="display: flex; justify-content: center; align-items: center;" class="basis-10/12">
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-secondary" ><Center iconSize={20}/></button>
+    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-secondary" style="margin-right: 5px;"><Center iconSize={20}/></button>
+    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-secondary" ><Horsechess iconSize={20}/></button>
   </div>
   <div style="display: flex; justify-content: center; align-items: center;" class="basis-1/12">
+    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-secondary" style="margin-right: 5px;"><WalletFilled iconSize={20}/></button>
     <button type="button" class="btn-icon bg-gradient-to-br variant-soft-secondary" ><Save iconSize={25}/></button>
   </div>
 </div>
