@@ -1,0 +1,6 @@
+<script>
+	export let iconSize = 30;
+	$: widthPx = `${iconSize}px`;
+    $: heightPx = `${iconSize}px`; 
+</script>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: {heightPx}; width: {widthPx};"><g class="" transform="translate(0,0)" style=""><path d="M41 73v304.563L88.697 151H423v-30H185.514l-16-48H41zm62.303 96L43.092 455h381.605l60.211-286H103.303z" fill="currentColor" fill-opacity="1"></path></g></svg>
