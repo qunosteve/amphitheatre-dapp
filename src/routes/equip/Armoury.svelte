@@ -46,45 +46,13 @@
 <!-- Armoury Toolbar -->
 <div class="flex flex-row pt-3 pb-3">
   <div style="display: flex; justify-content: center; align-items: center;" class="basis-1/12 ">
-    <button type="button" class="btn-icon bg-gradient-to-br variant-filled-primary" on:click={openGoogle}><OpenFolder iconSize={25}/></button>
+    <button type="button" class="btn-icon bg-gradient-to-br variant-soft-secondary" on:click={openGoogle}><OpenFolder iconSize={25}/></button>
   </div>
   <div style="display: flex; justify-content: center; align-items: center;" class="basis-10/12">
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-gradient-primary-secondary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-filled-primary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-filled-secondary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-filled-tertiary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-filled-error" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-filled-warning" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-filled-success" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-filled-surface" ><Center iconSize={20}/></button>
-    ||||
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ringed-primary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ringed-secondary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ringed-tertiary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ringed-error" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ringed-warning" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ringed-success" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ringed-surface" ><Center iconSize={20}/></button>
-    ||||
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ghost-primary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ghost-secondary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ghost-tertiary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ghost-error" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ghost-warning" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ghost-success" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-ghost-surface" ><Center iconSize={20}/></button>
-    ||||
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-primary" ><Center iconSize={20}/></button>
     <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-secondary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-tertiary" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-error" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-warning" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-success" ><Center iconSize={20}/></button>
-    <button type="button" class="btn-icon btn-icon-sm bg-gradient-to-br variant-soft-surface" ><Center iconSize={20}/></button>
-
   </div>
   <div style="display: flex; justify-content: center; align-items: center;" class="basis-1/12">
-    <button type="button" class="btn-icon bg-gradient-to-br variant-ringed-surface" ><Save iconSize={25}/></button>
+    <button type="button" class="btn-icon bg-gradient-to-br variant-soft-secondary" ><Save iconSize={25}/></button>
   </div>
 </div>
 
