@@ -13,14 +13,12 @@
 	import { LightSwitch } from '@skeletonlabs/skeleton';
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import { Wallet } from 'lucide-svelte';
-	import logo_amphitheatre_txt from '$lib/assets/logo_ampthitheatre_txt.png';
-	import logo_tas from '$lib/assets/logo_tas.png';
+
+	//import iamges
+	import AmphiLogoTxt from '$lib/assets/svg/amphilogotext.svelte';
+	import AmphiLogo from '$lib/assets/svg/amphilogographic.svelte';
 	import avatar_ape from '$lib/assets/ApeHead_Blue.jpeg';
-	import craft_icon from '$lib/assets/craftsman_amphi_flipped.png';
 	import nav_home from '$lib/assets/logo_amphitheatre_small.png';
-	import nav_arena from '$lib/assets/melee.png';
-	import nav_armoury from '$lib/assets/sword_helm_shield.png';
-	import nav_anvil from '$lib/assets/anvil-impact.png';
 	import { MessageSquareQuote, Send, Twitter } from 'lucide-svelte';
 
 	initializeStores();
@@ -37,17 +35,17 @@
 
 <div class="grid h-screen grid-rows-[auto_1fr_auto]">
 	<!-- Header -->
-	<header class="sticky top-0 z-1 bg-surface-600/80 backdrop-blur-sm">
+	<header class="top-0 z-1 bg-surface-600/80 backdrop-blur-sm">
 		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 			<!-- left side of AppBar-->
 			<svelte:fragment slot="lead">
 				<span class="badge">
-					<img src={nav_home} alt="tas logo" width="40" />
+					<AmphiLogo iconSize={50} />
 				</span>
 			</svelte:fragment>
 			<!-- center of AppBar-->
 			<div class="h-full mx-auto flex justify-center">
-				<img src={logo_amphitheatre_txt} alt="amphitheatre text logo" />
+				<AmphiLogoTxt iconSize={50} />
 			</div>
 			<!-- right side of AppBar-->
 			<svelte:fragment slot="trail">
@@ -66,13 +64,14 @@
 		</AppBar>
 		<!-- navigation tabs -->
 		<TabGroup
-			justify="justify-center"
-			active="bg-gradient-to-br variant-gradient-secondary-primary"
-			hover="hover:variant-soft-secondary"
-			flex="flex-1 xl:flex-none"
-			class="bg-surface-30-900-token"
-			tabStyle="rounded"
-		>
+		justify="justify-center"
+		active="bg-gradient-to-br variant-gradient-secondary-primary"
+		hover="hover:variant-soft-secondary"
+		flex="flex-1 lg:flex-none"
+		padding="py-1 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-60"
+		class="bg-surface-30-900-token w-full"
+		tabStyle="rounded"
+	  >
 			<TabAnchor href="/" selected={$page.url.pathname === '/'}>
 				<svelte:fragment slot="lead">					
 					<span>Explore</span>
@@ -86,31 +85,5 @@
 			</TabAnchor>
 		</TabGroup>
 	</header>
-
-	<!-- (sidebarLeft) -->
-	<!-- (sidebarRight) -->
-	<!-- (pageHeader) -->
-	<!-- Router Slot -->
 	<slot />
-	<!-- ---- / ---- -->
-	<!-- (pageFooter) -->
-	<!-- Footer -->
-	<footer class="bg-secondary-500 p-1">
-		<div
-			class="place-content-evenly justify-items-center logo-cloud grid-cols-3 lg:!grid-cols-3 gap-2 variant-filled-tertiary"
-		>
-			<a class="flex-none logo-item variant-ghost-secondary w-36 h-1" href="/">
-				<span><MessageSquareQuote /></span>
-				<span>Discord</span>
-			</a>
-			<a class="logo-item variant-ghost-secondary w-36 h-1" href="/">
-				<span><Twitter /></span>
-				<span>Twitter</span>
-			</a>
-			<a class="logo-item variant-ghost-secondary w-36 h-1" href="/">
-				<span><Send /></span>
-				<span>Telegram</span>
-			</a>
-		</div>
-	</footer>
 </div>

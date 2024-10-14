@@ -1,7 +1,7 @@
 <script>
 	export let iconSize = 30
 	$: widthPx = `${iconSize}px`
-    $: heightPx = `${iconSize*1.1}px`
+    $: heightPx = `${iconSize}px`
 </script>
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 style:width={widthPx} style:height={heightPx} viewBox="0 0 478.000000 650.000000"
