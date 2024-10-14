@@ -148,7 +148,7 @@
           <!-- Left Button -->
             <button
               type="button"
-              class="btn-icon z-10 absolute left-0 top-1/2 transform -translate-y-1/2"
+               class="btn-icon variant-ghost-secondary z-10 absolute left-1/2 transform -translate-x-full bottom-1"
               on:click={carouselLeft}
             >
               <PrevIcon />
@@ -165,7 +165,7 @@
             <!-- Right Button -->
             <button
               type="button"
-              class="btn-icon z-10 absolute right-0 top-1/2 transform -translate-y-1/2"
+              class="btn-icon z-10 variant-ghost-secondary absolute left-1/2 transform translate-x-full bottom-1"
               on:click={carouselRight}
             >
               <NextIcon />
