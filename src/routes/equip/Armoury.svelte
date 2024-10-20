@@ -13,7 +13,7 @@
   import Center from "$lib/assets/svg/horizontal-flip.svelte";
   import Horsechess from "$lib/assets/svg/chess-knight.svelte";
 
-  //set costs and variables
+  //set page variables
   let currentTile: number = 0;
   let elemCarousel: HTMLDivElement;
   const rightBaskets = [

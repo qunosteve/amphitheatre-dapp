@@ -1,7 +1,7 @@
 import { join } from 'path'
 import type { Config } from 'tailwindcss'
 import { skeleton } from '@skeletonlabs/tw-plugin'
-import { amphiTheme } from './ampthitheatre-theme.ts'
+import { myCustomTheme } from './ampthitheatre-theme.ts'
 
 
 export default {
@@ -20,7 +20,7 @@ export default {
 					},
 				],
 				custom: [
-					amphiTheme
+					myCustomTheme
 				],
 			},
 		}),

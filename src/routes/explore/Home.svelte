@@ -1,5 +1,11 @@
 <script lang="ts">
-    import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+	//skeleton and svelte imports
+	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+
+	//3rd party imports
+	import { CircleHelp } from 'lucide-svelte';
+
+    //graphics imports
     import AmphiLogo from '$lib/assets/svg/amphilogographic.svelte'
     import TasLogo from '$lib/assets/svg/taslogo.svelte'
     import Gamepad from '$lib/assets/svg/gamepad.svelte'
@@ -43,6 +49,34 @@
                 </svelte:fragment>
 				<svelte:fragment slot="summary">Gameplay</svelte:fragment>
 				<svelte:fragment slot="content">(content)</svelte:fragment>
+			</AccordionItem>
+			<AccordionItem>
+				<svelte:fragment slot="lead"><CircleHelp /></svelte:fragment>
+				<svelte:fragment slot="summary">
+					<div class="flex justify-left">
+						<span class="text-primary-500">Enquire</span>
+					</div>
+				</svelte:fragment>
+				<svelte:fragment slot="content">
+					<div class="logo-cloud grid-cols-4 sm:!grid-cols-4 gap-1 [&>.logo-item]:variant-filled-primary">
+						<a class="logo-item" href="/">
+							<span>(icon)</span>
+							<span>TAS Website</span>
+						</a>
+						<a class="logo-item" href="/">
+							<span>(icon)</span>
+							<span>Discord</span>
+						</a>	
+						<a class="logo-item" href="/">
+							<span>(icon)</span>
+							<span>Twitter</span>
+						</a>	
+						<a class="logo-item" href="/">
+							<span>(icon)</span>
+							<span>Other</span>
+						</a>
+					</div>
+				</svelte:fragment>
 			</AccordionItem>
 			<!-- ... -->
 		</Accordion>

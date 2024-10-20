@@ -1,7 +1,7 @@
 import type { CustomThemeConfig } from '@skeletonlabs/tw-plugin';
 
-export const amphiTheme: CustomThemeConfig = {
-    name: 'amphiTheme',
+export const myCustomTheme: CustomThemeConfig = {
+    name: 'my-custom-theme',
     properties: {
 		// =~= Theme Properties =~=
 		"--theme-font-family-base": `system-ui`,

@@ -1,7 +1,14 @@
 <script lang="ts">
-	import { MessageSquareQuote, Send, Twitter } from 'lucide-svelte';
+	//skeleton and svelte imports
+	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 
-	//import page elements
+	//3rd party imports
+	import { CircleHelp } from 'lucide-svelte';
+
+	//import graphics
+	import AmphiLogo from '$lib/assets/svg/amphilogographic.svelte';
+	import AmphiLogoText from '$lib/assets/svg/amphilogotext.svelte';
+
 	import { RadioGroup, RadioItem } from '@skeletonlabs/skeleton';
 	import CottageIcon from '$lib/assets/svg/cottage_noborder.svelte';
 	import TasLogo from '$lib/assets/svg/taslogo.svelte';
@@ -14,11 +21,10 @@
 	import Game from './explore/Game.svelte';
 	import LorePage from './explore/Lore.svelte';
 
-	//page logic
+	//page logic and variables
 	let exploreMode: string = "home";
+
 </script>
-
-
 <div>
 	<RadioGroup rounded="rounded-container-token" class="grid grid-cols-4 gap11" active="bg-gradient-to-br variant-gradient-primary-secondary" hover="hover:variant-soft-secondary">
 		<RadioItem bind:group={exploreMode} name="home" value={'home'}>
@@ -55,3 +61,4 @@
     {/if}
 
 </div>
+
