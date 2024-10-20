@@ -17,8 +17,7 @@
 	//import iamges
 	import AmphiLogoTxt from '$lib/assets/svg/amphilogotext.svelte';
 	import AmphiLogo from '$lib/assets/svg/amphilogographic.svelte';
-	import avatar_ape from '$lib/assets/ApeHead_Blue.jpeg';
-	import nav_home from '$lib/assets/logo_amphitheatre_small.png';
+	import avatar_ape from '$lib/assets/png/ApeHead_Blue.jpeg';
 	import { MessageSquareQuote, Send, Twitter } from 'lucide-svelte';
 
 	initializeStores();
@@ -78,7 +77,7 @@
 				</svelte:fragment>
 			</TabAnchor>
 			<TabAnchor href="/equip" selected={$page.url.pathname === '/equip'}>
-					<span> Equip</span>
+					<span>Equip</span>
 			</TabAnchor>
 			<TabAnchor href="/engage" selected={$page.url.pathname === '/engage'}>
 					<span>Engage</span>
